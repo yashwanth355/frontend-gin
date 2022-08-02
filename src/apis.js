@@ -9,6 +9,8 @@ import url from "./constants/url"
 //     "Access-Control-Allow-Origin": "*"
 // }
 
+
+
 export const login = (data) => {
     return instance.post(`${url.apiGinUrl}${routes.login}`, data)
         // return axios.post(`${url.apiGinUrl}/${routes.login}`, data, {headers: headers})
