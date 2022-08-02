@@ -10,6 +10,9 @@ const instance = axios.create({
         'Accept': '*',
     },
 });
+
+
+
 instance?.interceptors.request.use(function (config) {
     if (!!config.data) {
         for (let key of Object.keys(config?.data)) {

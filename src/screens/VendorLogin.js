@@ -82,9 +82,7 @@ export default function VendorLogin(props) {
             }
         }
     }
-    
-    
-    
+
     
 
     return (
