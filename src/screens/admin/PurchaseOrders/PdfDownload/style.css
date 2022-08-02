@@ -1,0 +1,236 @@
+#po_view_main {
+    margin: 0 10px;
+    padding: 0 2em;
+}
+.first-title {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 400;
+}
+.first-section-main p, .first-section-main-import p, .third-section-left-main p, .third-section-right-main p, .fourth-main p, .rm-mar-btm{
+    margin: 0;
+}
+#po_view_main p {
+    color: #000 !important;
+}
+.text-capital {
+    text-transform: uppercase;
+}
+.first-section-main-import {
+    width: 600px;
+    margin: 0 auto;
+}
+.first-formaer {
+    padding-bottom: 20px;
+}
+p.first-gst {
+    padding-top: 10px;
+}
+.second-section-supplier-type {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px !important;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+.second-section-contract {
+    width: 100%;
+}
+.second-section-contract p{
+    font-weight: bold;
+    width: fit-content;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px !important;
+    border-bottom: 4px solid #000;
+    letter-spacing: 10px;
+    padding-bottom: 10px;
+}
+.third-section-left-main-contract .supplier_name {
+    text-transform: uppercase;
+    margin: 0;
+}
+.supplier_name {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.supplier_phone {
+    padding: 10px 0;
+}
+.supplier_gst {
+    margin-bottom: 10px;
+}
+.third-section-left-main {
+    border-right: 2px solid #000;
+    width: 98%;
+    padding: 1em 7em 1em 10px;
+    overflow-wrap: break-word;
+}
+.third-section-left-main-contract {
+    width: 98%;
+    overflow-wrap: break-word;
+}
+.third-main {
+    border-bottom: 2px solid #000;
+}
+.third-main-import {
+    margin-bottom: 3em;
+}
+.third-section-right-main {
+    padding: 1em 0;
+}
+.fourth-main {
+    padding-left: 10px;
+    padding-top: 1em;
+}
+.pdf_table {
+    border: 2px solid #000;
+    margin-top: 1em;
+}
+.pdf_table_main th, .pdf_table_main td {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000 !important;
+    color: #000 !important;
+    font-weight: 500;
+}
+.pdf_table_dispatch th {
+    font-weight: bold;
+}
+#po_view_main .pdf_table_dispatch td, .pdf_table_dispatch th {
+    border: unset !important;
+    text-align: center;
+    padding: 5px;
+    color: #000 !important;
+}
+#po_view_main .pdf_table_dispatch tr {
+    border-bottom: 2px dotted #000;
+    color: #000 !important;
+    font-weight: 500;
+}
+#po_view_main .pdf_table_dispatch tr:last-child {
+    border-bottom: unset;
+}
+.dispatch_tble {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+#po_view_main .brdr-none td {
+    border-right: unset !important;
+    color: #000 !important;
+    font-weight: 500;
+}
+.btm-cntr td{
+    text-align: center;
+    padding: 1em 5em;
+    font-style: italic;
+    color: #000 !important;
+    font-weight: 500;
+}
+.sign-right h4{
+    padding-bottom: 3em;
+}
+
+.sign-right .MuiGrid-root{
+    text-align: center;
+}
+.bld-txt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.terms_main h6 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.text_capitalize {
+    text-transform: capitalize;
+}
+.text-upper {
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center !important;
+}
+.underline {
+    padding-bottom: 1px;
+    border-bottom: 2px solid #000;
+}
+.brdr-btm {
+    border-bottom: 2px solid #000;
+}
+.import_btm tr{
+    height: 30px;
+}
+.import_btm .w-180 {
+    width: 180px;
+    vertical-align: baseline;
+}
+.text_top {
+    vertical-align: baseline !important;    
+}
+.add-wid {
+    width: 250px;
+}
+
+/* .page-break {
+    margin-bottom: 15px;
+} */
+.documents {
+    padding-left: 15px;
+}
+.documents li{
+    list-style: none;
+}
+.documents li strong{
+    padding-right: 10px;
+}
+.signature_bottom {
+    text-transform: uppercase;
+    margin-top: 10em;
+    display: flex;
+}
+.buyer {
+    /* float: left; */
+    flex: 0 0 50%;
+    /* border-top: 2px solid #000; */
+}
+.seller {
+    /* float: right; */
+    flex: 0 0 50%;
+    /* border-top: 2px solid #000; */
+}
+.seller div {
+    width: fit-content;
+    border-top: 2px solid #000;
+    float: right;
+}
+.buyer div {
+    width: fit-content;
+    border-top: 2px solid #000;
+}
+.signature_head {
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+.signature_date {
+    margin-top: 0px;
+}
+.signature_name {
+    margin-bottom: 0px;
+}
+.text-right {
+    text-align: right;
+}
+
+
+/* #footer {
+    position: fixed;
+    bottom: 0;
+} */
