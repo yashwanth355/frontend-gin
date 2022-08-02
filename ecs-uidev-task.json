@@ -1,0 +1,70 @@
+{
+
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "containerDefinitions": [
+    {
+      "name": "",
+      "image": "",
+      "memory": 1024,
+      "cpu": 1024,
+      "essential": true,
+      "portMappings": [
+          {
+            "hostPort": 0,
+            "protocol": "tcp",
+            "containerPort": 8080
+          }
+      ],
+      "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+              "awslogs-group": "awslogs-ecs-ui",
+              "awslogs-region": "ap-south-1",
+              "awslogs-stream-prefix": "awslogs-ecs-ui"
+          }
+      },
+
+      "mountPoints": [
+          {
+            "sourceVolume": "logfolder",
+            "containerPath": "/prod/msp/logs"
+          }
+      ],
+      "environment": [
+          {
+            "name": "APP_NAME",
+            "value": "development"
+          },
+          {
+          "name":"REACT_APP_API_URL",
+          "value":"https://c30j81s4jj.execute-api.ap-south-1.amazonaws.com/dev/"   
+          },
+          {
+            "name":"PRICING_API_URL",
+            "value":"https://dev-gin-api.cclproducts.com/pricing/"   
+            },
+          {
+            "name":"PACKAGING_API_URL",
+            "value":"https://dev-gin-api.cclproducts.com/api/"   
+            },
+          {
+          "name":"ENV",
+          "value":"dev"   
+          }
+          ]
+      }
+      ],
+  "volumes": [
+      {
+          "host": {
+              "sourcePath": "/prod/msp/logs"
+          },
+          "name": "logfolder"
+      }
+  
+  ],
+  "networkMode": "bridge",
+  "placementConstraints": []
+}

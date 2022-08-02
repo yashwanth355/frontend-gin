@@ -1,0 +1,70 @@
+{
+
+    "requiresCompatibilities": [
+      "EC2"
+    ],
+    "containerDefinitions": [
+      {
+        "name": "",
+        "image": "",
+        "memory": 1024,
+        "cpu": 1024,
+        "essential": true,
+        "portMappings": [
+            {
+              "hostPort": 0,
+              "protocol": "tcp",
+              "containerPort": 8080
+            }
+        ],
+        "logConfiguration": {
+            "logDriver": "awslogs",
+            "options": {
+                "awslogs-group": "qa-ui-qpp-gin",
+                "awslogs-region": "ap-south-1",
+                "awslogs-stream-prefix": "qa-ui-qpp-gin"
+            }
+        },
+
+        "mountPoints": [
+            {
+              "sourceVolume": "logfolder",
+              "containerPath": "/prod/msp/logs"
+            }
+        ],
+        "environment": [
+           {
+            "name": "APP_NAME",
+            "value": "qa"
+            },
+            {
+            "name":"REACT_APP_API_URL",
+            "value":"https://obmp8rsad9.execute-api.ap-south-1.amazonaws.com/migrationtest/"   
+            },
+            {
+              "name":"PRICING_API_URL",
+              "value":"https://qa-gin-api.cclproducts.com/pricing/"   
+              },
+            {
+              "name":"PACKAGING_API_URL",
+              "value":"https://qa-gin-api.cclproducts.com/api/"   
+              },
+            {
+            "name":"ENV",
+            "value":"qa"   
+            }
+            ]
+        }
+        ],
+    "volumes": [
+        {
+            "host": {
+                "sourcePath": "/prod/msp/logs"
+            },
+            "name": "logfolder"
+        }
+
+    ],
+    "networkMode": "bridge",
+    "placementConstraints": []
+  }

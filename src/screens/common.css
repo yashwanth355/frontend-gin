@@ -1,0 +1,54 @@
+.item {        
+    padding: 10px;
+    margin-bottom: 15px !important;    
+    margin-top: 10px !important;    
+    border-bottom-color: #F05A30;
+    border-bottom-width: 2px;
+    border-bottom-style: inset;
+    margin-top: 10px;        
+    opacity: 0.9;     
+    justify-content: center;      
+}
+.item > .MuiTypography-root{
+    font-size: 1.2rem !important;           
+}  
+.cardHeader, .MuiTableRow-head > .MuiTableCell-stickyHeader {
+    background-color: #feecda;    
+}
+.page-header{
+    width: '100%';
+    margin-bottom: 15px;
+}
+.MuiAccordionSummary-content.Mui-expanded{
+    margin: 0 !important;
+}
+#simple-modal-title{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 1.5rem !important;
+}
+
+.MuiInputBase-root.Mui-disabled{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.MuiCardContent-root .MuiGrid-item span.MuiTypography-root{
+    font-weight: 640;
+} 
+
+.page-break{
+    margin-top: 900px;
+}
+.pluspost{
+    position: absolute;
+    right: 12px;
+    top: 26px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.posrelative{
+    position: relative;
+}

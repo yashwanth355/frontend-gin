@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: "Nunito", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Nunito", "Courier New", monospace;
+}
+
+.create_mrin .MuiFormControl-root,
+.create_mrin .jss98 {
+  min-width: 100% !important;
+}
+
+.dispatch_mrin .MuiTableContainer-root {
+  max-height: 280px !important;
+}
+
+.dispatch_details > .MuiGrid-container .makeStyles-formControl-19,
+.dispatch_details > .MuiGrid-container .jss39 {
+  min-width: 97%;
+}
