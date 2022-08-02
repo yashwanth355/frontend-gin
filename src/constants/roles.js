@@ -1,6 +1,7 @@
 export const roles = {
     admin: "Admin",
     // managingDirector: "Managing Director",
+    // managingDirector: "Managing Director",v
     managingDirector: "Executive Leadership",
     generalUser: "General User",
     gmc: "GMC",
